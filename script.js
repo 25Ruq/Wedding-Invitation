@@ -24,7 +24,7 @@ function submitRSVP(response) {
   };
 
   // 🔗 Replace with your actual working Web App URL here:
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbyMC9XYgSTRNBaRy_keF4j97IHL8e0lynRgVS9LJEPR67JuzTaNPOKJray8Y0043RDU6A/exec';
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxmMq0z45t0ISNKUMGmV8HQtdgDuCK1AAobTXdNXCplcL8vHPF9TLMgMezBKf8EW0C7vA/exec';
 
   fetch(scriptURL, {
     method: 'POST',
