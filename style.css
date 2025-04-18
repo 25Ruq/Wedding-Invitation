@@ -1,0 +1,54 @@
+* {
+    font-family: 'Noto Kufi Arabic', sans-serif;
+}
+
+body, html {
+    height: 100%;
+}
+
+p {
+    line-height: 2;
+}
+
+.bgimg {
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url("https://www.w3schools.com/w3images/wedding_couple.jpg");
+}
+
+/* Confirmation Popup Modal Styling */
+#confirmationPopup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Transparent black background */
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    width: 60%;
+    max-width: 500px;
+}
+
+.confirmation-button {
+    padding: 10px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirmation-button:hover {
+    background-color: #45a049;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- <html dir="rtl" lang="ar"> -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Wedding Invitation</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="w3-display-container w3-wide bgimg w3-grayscale-min" id="home">
+    <div class="w3-display-middle w3-text-white w3-center">
+      <h1 class="w3-jumbo">Jane & John</h1>
+      <h2>Are getting married</h2>
+      <h2><b>17.07.2017</b></h2>
+    </div>
+  </header>
+
+  <!-- Info Section -->
+  <div class="w3-container w3-padding-64 w3-pale-red w3-grayscale-min w3-center" id="wedding">
+    <div class="w3-content">
+      <h1 class="w3-text-grey"><b>THE WEDDING</b></h1>
+      <div class="w3-row">
+        <div class="w3-half">
+          <h2>When</h2>
+          <p>Wedding Ceremony - 2:00pm</p>
+          <p>Reception & Dinner - 5:00pm</p>
+        </div>
+        <div class="w3-half">
+          <h2>Where</h2>
+          <p>Some place, an address</p>
+          <p>Some where, some address</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- RSVP Section -->
+  <div class="w3-container w3-padding-64 w3-pale-red w3-center w3-wide" id="rsvp">
+    <h1>HOPE YOU CAN MAKE IT!</h1>
+    <p class="w3-large">Kindly Respond By January, 2017</p>
+    <p class="w3-xlarge">
+      <button onclick="document.getElementById('id01').style.display='block'"
+        class="w3-button w3-round w3-red w3-opacity w3-hover-opacity-off" style="padding:8px 60px">RSVP</button>
+    </p>
+  </div>
+
+  <!-- RSVP Modal -->
+  <div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="padding:32px;max-width:600px">
+      <div class="w3-container w3-white w3-center">
+        <h1 class="w3-wide">CAN YOU COME?</h1>
+        <p>We really hope you can make it.</p>
+        <form id="rsvpForm">
+          <input class="w3-input w3-border" type="text" placeholder="Name" name="name" id="name" required />
+        </form>
+        <p><i>Sincerely, John & Jane</i></p>
+        <div class="w3-row">
+          <div class="w3-half">
+            <button onclick="submitRSVP('going')" type="button" class="w3-button w3-block w3-green" name="going">Going</button>
+          </div>
+          <div class="w3-half">
+            <button onclick="submitRSVP('cantcome')" type="button" class="w3-button w3-block w3-red" name="cantcome">Can't come</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirmation Popup -->
+  <div id="confirmationPopup">
+    <div class="confirmation-content">
+      <h2 id="responseMessage"></h2>
+      <button onclick="closeConfirmationPopup()" class="confirmation-button">Close</button>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
