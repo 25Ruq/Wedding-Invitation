@@ -30,7 +30,7 @@ function submitRSVP(response) {
     method: 'POST',
     body: JSON.stringify(formData),
     headers: {
-      'Content-Type': 'application/json'
+      'Content-Type':  "text/plain;charset=utf-8"
     }
   })
   .then(response => response.text())
